@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Styler - Rubab BS CS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h2>Interactive Text Styler - Assignment</h2>
+<p class="sub">By Rubab - University of Layyah</p>
+
+<div id="textBox">
+<p id="mainText">This is sample text. Change my appearance by clicking buttons below. University of Layyah BS Computer Science.</p>
+</div>
+
+<div class="controls">
+<div class="group"><h4>1. Text Color</h4>
+<button onclick="changeColor('red')">Red</button>
+<button onclick="changeColor('blue')">Blue</button>
+<button onclick="changeColor('green')">Green</button>
+<input type="color" id="colorPicker" onchange="changeColor(this.value)">
+</div>
+
+<div class="group"><h4>2. Font Size</h4>
+<button onclick="changeSize('increase')">A+ Increase</button>
+<button onclick="changeSize('decrease')">A- Decrease</button>
+</div>
+
+<div class="group"><h4>3. Font Family</h4>
+<button onclick="changeFamily('Arial')">Arial</button>
+<button onclick="changeFamily('Georgia')">Georgia</button>
+<button onclick="changeFamily('Courier New')">Courier</button>
+</div>
+
+<div class="group"><h4>4. Text Decoration</h4>
+<button onclick="decoration('underline')">Underline</button>
+<button onclick="decoration('overline')">Overline</button>
+<button onclick="decoration('line-through')">Line-Through</button>
+<button onclick="decoration('none')">Remove</button>
+</div>
+
+<div class="group"><h4>5. Bold & Italic</h4>
+<button onclick="toggleBold()" id="boldBtn"><b>Bold</b></button>
+<button onclick="toggleItalic()" id="italicBtn"><i>Italic</i></button>
+</div>
+
+<div class="group"><h4>6. Text Alignment</h4>
+<button onclick="align('left')">Left</button>
+<button onclick="align('center')">Center</button>
+<button onclick="align('right')">Right</button>
+<button onclick="align('justify')">Justify</button>
+</div>
+
+<div class="group"><h4>7. Uppercase / Lowercase</h4>
+<button onclick="transform('uppercase')">UPPERCASE</button>
+<button onclick="transform('lowercase')">lowercase</button>
+<button onclick="transform('capitalize')">Capitalize</button>
+</div>
+
+<div class="group"><h4>8. Background Color</h4>
+<button onclick="bgColor('yellow')">Yellow</button>
+<button onclick="bgColor('lightpink')">Pink</button>
+<button onclick="bgColor('lightblue')">Blue</button>
+<button onclick="bgColor('white')">White</button>
+</div>
+
+<div class="group"><h4>9. Dark / Light Mode</h4>
+<button onclick="toggleMode()" id="modeBtn">Dark Mode</button>
+<button onclick="resetAll()" class="reset">RESET ALL</button>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

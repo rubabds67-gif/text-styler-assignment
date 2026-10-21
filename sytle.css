@@ -1,0 +1,16 @@
+body{margin:0;font-family:Arial;background:#f2f4f8;transition:0.3s}
+.container{max-width:800px;margin:20px auto;background:white;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
+h2{text-align:center;margin:0;color:#0a4a2a}
+.sub{text-align:center;color:#666;font-size:13px}
+#textBox{border:2px dashed #0a4a2a;padding:25px;border-radius:12px;margin:20px 0;background:white;min-height:100px}
+#mainText{font-size:20px;margin:0;transition:0.3s}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.group{background:#f8fafc;padding:12px;border-radius:10px;border:1px solid #e2e8f0}
+.group h4{margin:0 0 8px;font-size:13px;color:#334155}
+button{padding:6px 12px;margin:3px;border:none;border-radius:6px;background:#0a4a2a;color:white;cursor:pointer;font-size:13px}
+button:hover{background:#145c32}
+.reset{background:#ef4444;width:100%;margin-top:10px;font-weight:bold;height:40px}
+.dark{background:#0f172a !important;color:white}
+.dark .container{background:#1e293b;color:white}
+.dark .group{background:#334155;border-color:#475569}
+.dark #textBox{background:#0f172a;border-color:#fff}
